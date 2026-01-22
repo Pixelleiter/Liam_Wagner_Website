@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liam Wagner | Foto · Video · Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- LOADER -->
+    <div class="loader" id="loader">
+        <h1>LW</h1>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress"></div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">LW</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">Über mich</a></li>
+                <li><a href="#projects" class="nav-link">Projekte</a></li>
+                <li><a href="#reel" class="nav-link">Reel</a></li>
+                <li><a href="#contact" class="nav-link">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">HTL Multimedia Student</span>
+                <h1 class="hero-title">
+                    Liam <span>Wagner</span>
+                </h1>
+                <p class="hero-desc">Cinematic Foto, Video & Design mit Fokus auf Storytelling</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Projekte</a>
+                    <a href="#contact" class="btn btn-ghost">Kontakt</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <img src="images/profile.jpg" alt="Liam Wagner" class="profile-img">
+                    <div class="profile-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="mouse-scroll"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT - NEUES DESIGN -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Über mich</span>
+                <h2>Portfolio Facts</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Multimedia Schüler an der <strong>HTL Wien</strong>. Spezialisiert auf cinematic Fotografie, Video Production und modernes Design für Social Media und Events.</p>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <span class="skill-emoji">📸</span>
+                            <span>Portrait & Event</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-emoji">🎥</span>
+                            <span>Cinematic Video</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-emoji">🎨</span>
+                            <span>Brand Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="facts-grid">
+                    <div class="fact-card project-fact">
+                        <div class="fact-icon">📁</div>
+                        <div class="fact-content">
+                            <span class="fact-number" data-target="+20">5</span>
+                            <span class="fact-label">Projekte</span>
+                        </div>
+                    </div>
+                    <div class="fact-card video-fact">
+                        <div class="fact-icon">🎬</div>
+                        <div class="fact-content">
+                            <span class="fact-number" data-target="4K">3</span>
+                            <span class="fact-label">Video</span>
+                        </div>
+                    </div>
+                    <div class="fact-card years-fact">
+                        <div class="fact-icon">⏳</div>
+                        <div class="fact-content">
+                            <span class="fact-number" data-target="3+"></span>
+                            <span class="fact-label">Jahre</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Projekte</span>
+                <h2>Gallery</h2>
+            </div>
+            <div class="projects-container">
+                <div class="project-tabs">
+                    <button class="tab-btn active" data-tab="0">
+                        <span>Portrait</span>
+                    </button>
+                    <button class="tab-btn" data-tab="1">
+                        <span>Shortfilm</span>
+                    </button>
+                    <button class="tab-btn" data-tab="2">
+                        <span>Design</span>
+                    </button>
+                </div>
+                <div class="project-content">
+                    <div class="project-preview active" data-tab="0">
+                        <div class="preview-bg portrait">
+                            <img src="images/portrait1.jpg" alt="Cinematic Portrait" class="project-img">
+                        </div>
+                        <div class="preview-info">
+                            <h3>Cinematic Portrait</h3>
+                            <p>Nachtaufnahmen mit Neonlicht, 50mm, starkem Color Grading</p>
+                        </div>
+                    </div>
+                    <div class="project-preview" data-tab="1">
+                        <div class="preview-bg video">
+                            <img src="images/shortfilm1.jpg" alt="City Nights" class="project-img">
+                        </div>
+                        <div class="preview-info">
+                            <h3>City Nights</h3>
+                            <p>Urban Shortfilm mit handheld Shots und Neon-Ästhetik</p>
+                        </div>
+                    </div>
+                    <div class="project-preview" data-tab="2">
+                        <div class="preview-bg design">
+                            <img src="images/design1.jpg" alt="Creator Branding" class="project-img">
+                        </div>
+                        <div class="preview-info">
+                            <h3>Creator Branding</h3>
+                            <p>Logo, Farbsystem, Social Media Templates</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REEL -->
+    <section id="reel" class="section reel">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Showreel</span>
+                <h2>Bewegte Bilder</h2>
+            </div>
+            <div class="reel-player">
+                <video src="videos/showreel.mp4" muted loop playsinline class="reel-video" poster="images/showreel-poster.jpg">
+                    <img src="images/showreel-poster.jpg" alt="Showreel 2026" class="reel-video">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Kontakt</span>
+                <h2>Dein Projekt?</h2>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-row full">
+                    <textarea placeholder="Nachricht / Projektidee..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Nachricht senden</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
