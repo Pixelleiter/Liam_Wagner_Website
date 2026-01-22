@@ -6,8 +6,6 @@
     --text-secondary: rgba(255,255,255,0.7);
     --gradient-primary: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 50%, #10b981 100%);
     --glow-primary: 0 0 30px rgba(139,92,246,0.5);
-    --image-glow-red: 0 0 25px rgba(255, 68, 68, 0.6);
-    --image-border-red: 1px solid rgba(255, 68, 68, 0.4);
 }
 
 * {
@@ -264,14 +262,13 @@ body {
     aspect-ratio: 3/4;
     border-radius: 32px;
     overflow: hidden;
-    border: var(--image-border-red);
-    box-shadow: 0 40px 80px rgba(0,0,0,0.7), var(--image-glow-red);
+    box-shadow: 0 40px 80px rgba(0,0,0,0.7);
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .profile-card:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 60px 120px rgba(0,0,0,0.8), 0 0 40px rgba(255, 68, 68, 0.8);
+    box-shadow: 0 60px 120px rgba(0,0,0,0.8);
 }
 
 .profile-img {
@@ -289,7 +286,6 @@ body {
 .profile-glow {
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 30% 30%, rgba(255, 68, 68, 0.4) 0%, transparent 70%);
     pointer-events: none;
     opacity: 0.8;
     animation: glow-pulse 3s ease-in-out infinite;
@@ -559,8 +555,7 @@ body {
     overflow: hidden;
     cursor: pointer;
     transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    border: var(--image-border-red);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.6), var(--image-glow-red);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.6);
 }
 
 .preview-bg:hover {
@@ -617,7 +612,6 @@ body {
     margin: 0 auto;
     aspect-ratio: 16/9;
     border-radius: 32px;
-    border: var(--image-border-red);
     background: var(--bg-primary);
     display: flex;
     flex-direction: column;
@@ -625,14 +619,14 @@ body {
     justify-content: center;
     text-align: center;
     color: var(--text-secondary);
-    box-shadow: 0 40px 80px rgba(0,0,0,0.7), var(--image-glow-red);
+    box-shadow: 0 40px 80px rgba(0,0,0,0.7);
     transition: all 0.4s ease;
     overflow: hidden;
 }
 
 .reel-player:hover {
     transform: translateY(-8px);
-    box-shadow: 0 60px 120px rgba(0,0,0,0.8), 0 0 40px rgba(255, 68, 68, 0.8);
+    box-shadow: 0 60px 120px rgba(0,0,0,0.8);
 }
 
 .reel-video {
@@ -680,7 +674,7 @@ body {
 .form-row textarea:focus {
     outline: none;
     border-color: #ff4444;
-    box-shadow: var(--image-glow-red);
+
 }
 
 .form-row textarea {
